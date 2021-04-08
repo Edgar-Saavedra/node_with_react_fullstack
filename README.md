@@ -19,6 +19,9 @@ This is the general stack and what each technology does.
 
   https://github.com/nvm-sh/nvm
 
+## git
+`git commit -am "message"`
+
 ## To create new project
 `$ npm init`
-
+`npm install --save express`
