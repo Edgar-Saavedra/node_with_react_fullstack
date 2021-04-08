@@ -8,3 +8,6 @@ This is the general stack and what each technology does.
   - React.js for building dynamic components and HTML
   - Redux: a library for react js to create single page applications.
   - CSS: for styling our site.
+- **Extra**
+  - OAUTH : for authenticating with goolge
+  - Stripe : for taking credit cards
