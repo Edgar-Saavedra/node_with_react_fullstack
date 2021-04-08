@@ -30,6 +30,16 @@ This is the general stack and what each technology does.
 - javascript runtime, used to execute code outside browser
 - js usually in browsers
 - can use javascript outside browser
+
 ## Express
 - uses node.js
 - collection of functions to help making apps
+
+## HTTP Requests Flow
+- server listenst to traffic on a port.
+- port is where app is served on computer
+- we configure to listen to traffic on a specific port
+- node takes http requests and sends to express
+- express makes our life easier
+- express handles requests.
+- express creates route handlers for handling different requests
