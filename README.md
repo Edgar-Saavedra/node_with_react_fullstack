@@ -16,3 +16,9 @@ This is the general stack and what each technology does.
 - **Extra**
   - OAUTH : for authenticating with goolge
   - Stripe : for taking credit cards
+
+  https://github.com/nvm-sh/nvm
+
+## To create new project
+`$ npm init`
+
