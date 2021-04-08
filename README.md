@@ -1,10 +1,12 @@
 ## Stack
 This is the general stack and what each technology does.
+
 - **Backend**:
   - MongoDB for database
   - Express Framework for application
-    - Express API to take requests and talks to mongodb and returning data from our API
+    - We build an Express API to take requests and talks to mongodb and returning data from our API to the frontend
   - Node.js: the base language and enviroment (javascript)
+
 - **Front-end**:
   - React.js for building dynamic components and HTML
     - All requests talking through AJAX and JSON
