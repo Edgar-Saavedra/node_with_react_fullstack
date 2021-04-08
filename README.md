@@ -25,3 +25,11 @@ This is the general stack and what each technology does.
 ## To create new project
 `$ npm init`
 `npm install --save express`
+
+## Node
+- javascript runtime, used to execute code outside browser
+- js usually in browsers
+- can use javascript outside browser
+## Express
+- uses node.js
+- collection of functions to help making apps
