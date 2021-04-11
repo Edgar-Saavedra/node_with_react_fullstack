@@ -81,3 +81,5 @@ This is the general stack and what each technology does.
     `https://git.heroku.com/glacial-basin-14905.git`
     `git remote add heroku https://git.heroku.com/glacial-basin-14905.git`
 
+#to run heroku build
+`git push -f heroku`
