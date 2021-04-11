@@ -44,4 +44,4 @@ app.get('/hi-diana', (req, res) => {
 const PORT = process.env.PORT || 5000;
 // port
 // make sure to do ctrl-c
-app.listen(5000);
+app.listen(PORT);
