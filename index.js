@@ -38,6 +38,10 @@ app.get('/hi-diana', (req, res) => {
   `);
 });
 
+// When eve heroku runs our app, it can inject
+// enviroment variables. Herokus opportunity for run time config
+// we have to wait till last section to figure out port.
+const PORT = process.env.PORT || 5000;
 // port
 // make sure to do ctrl-c
 app.listen(5000);

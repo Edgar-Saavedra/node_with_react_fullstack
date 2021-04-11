@@ -43,3 +43,41 @@ This is the general stack and what each technology does.
 - express makes our life easier
 - express handles requests.
 - express creates route handlers for handling different requests
+
+## Heroku Deployment
+- Dynamic Port Binding
+  - Heroku listens to specific port
+  - heroku will tell us which port we need to listen to.
+  - "you have to listen to incoming traffic on this port"
+  - setup really easy
+- Specify Specific Node Enviroment
+  Heroku uses:
+  ```
+  "engines" {
+      "node": "8.8.1",
+      "npm": "5.0.3"
+    },
+  ```
+  Heroku automatically trys to run `start` script:
+  ```
+  "scripts": {
+    "start": "node index.js"
+  },
+  ```
+- Make sure to have a `.gitignore` file
+
+- Create git repo
+  `git init`
+
+- Install heroku cli
+  `brew tap heroku/brew && brew install heroku`
+  `heoroku -v`
+
+`heroku login`
+`heorku create`
+  - first the location of app on heroku
+    `https://glacial-basin-14905.herokuapp.com/`
+  - second link deployment target
+    `https://git.heroku.com/glacial-basin-14905.git`
+    `git remote add heroku https://git.heroku.com/glacial-basin-14905.git`
+
