@@ -21,7 +21,7 @@ const app = express();
 app.get('/', (req, res) => {
   // send back a response with data
   res.send({
-    hi: 'there'
+    hi: 'there!'
   });
 });
 
