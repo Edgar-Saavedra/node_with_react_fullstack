@@ -143,3 +143,8 @@ Note! Google has made a number of changes to the OAuth credential's restrictions
 Since the main goal of using http://localhost:5000/* was to show the redirect error a few lectures later, we entered the correct redirect as shown above since this is what it will be changed to anyway.
 ```
 11. Copy your Client ID and Client Secret in a safe place so you can use it in your application in a future lecture. (ID and Secret were redacted from the screenshot)
+
+### After Setting up Google App
+save `client secret`
+
+Securly store the secret
