@@ -83,3 +83,23 @@ This is the general stack and what each technology does.
 
 #to run heroku build
 `git push -f heroku`
+
+# OAUTH
+
+- we send user to google with our APP ID
+- user will let the user know
+- user approves
+- google redirects to app, something like `auth/google/callback?code=456`
+  - the code parameter, will let us use the code to make a follow up request to google
+  - "we are sure they granted us permission, we wanna exchange this code for info"
+- We get user details
+- set user ID in cookie and keep them logged in
+- User is logged in
+- we can loggin
+
+# Passport JS
+- handles a lot of OAuth
+- kinda of a black box
+- ### you always install base passport module
+- ### Passport Strategies, always install at least 1
+  - A strategy is a different module to integrate/authenticate with a different service
