@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/Edgar-Saavedra/node_with_react_fullstack#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "passport": "^0.4.1",
+    "passport-google": "^0.3.0"
   }
 }
