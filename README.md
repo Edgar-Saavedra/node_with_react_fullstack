@@ -105,7 +105,7 @@ This is the general stack and what each technology does.
   - A strategy is a different module to integrate/authenticate with a different service
 
 `npm install --save passport`
-`npm install --save passport-google -oauth20`
+`npm install --save passport-google-oauth20`
 
 OAuth20 is short for 2.0
 
