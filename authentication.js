@@ -23,8 +23,10 @@ passport.use(new GoogleStrategy({
     // allows us to automatically re-access the
     // access token again
     // not we should look more into how this works more
+    // refresh token allows us to re-access the acocunt
     console.log('refreshToken', refreshToken);
     console.log('profile', profile);
+    // server waits for us to do something
   })
 );
 
