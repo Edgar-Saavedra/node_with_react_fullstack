@@ -148,3 +148,50 @@ Since the main goal of using http://localhost:5000/* was to show the redirect er
 save `client secret`
 
 Securly store the secret
+
+### HTTP
+
+- http requests, stateless, http inherently has no way to identity or share info between requests
+- sends back unique identifying piece of info, cookie, token whatever "token"
+- token - my proof I logged into the application
+- we make follow up request and include to server
+- we use cookie based authentication. Hey please log me in. After user goes through Oauth, we generate identifying piece of info.
+  - we include a header
+  - header will have property 'Set-Cookie: 'aasdf''
+    - browser will store cookie into its memory
+    - cookies managed by browser
+    - we use cookie authentication cuz its elegant and reasonable.
+    - we dont need to care the cookie.
+
+### EMAIL PASS WORD FLOW
+- sign up with email and passwordd
+ - we keep record
+- user signs out
+- user comes back and attempts login
+  - We compare email/password combos
+  - we give user the cooki and we
+    do everything with HTTP flow.
+
+### OAUTH FLOW:
+  - A user signs up. They go through Oauth flow
+  - our server receives google info
+  - signs out
+  - we exchange code fro profile
+  - we pick consistant piece of info form the profile. "Is this one piece of your profile identical to what you had earlier?"
+  - Look at profile ...
+    - we use the users id
+      - user signs up
+      - take google id
+      - we sign them in.
+      - we take id compare to original and confirm
+      - we are making assumption the id wont change
+
+### Full flow
+- User comes to our server with Google profile
+- "Sign me up"
+- Cool new user, we create new record in our DB with ID has come and signed up.
+- send cookie back to browser
+- user logs out. We Unset/expire the cookie.
+- signs in again, we check to see our users
+- we set cookie again, saying you are the user.
+- before we create any record for a user, we check to see if the user exists.
