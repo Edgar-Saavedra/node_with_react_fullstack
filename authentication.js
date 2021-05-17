@@ -25,7 +25,7 @@ passport.use(new GoogleStrategy({
     // not we should look more into how this works more
     // refresh token allows us to re-access the acocunt
     console.log('refreshToken', refreshToken);
-    console.log('profile', profile);
+    console.log('profile ---- ', profile);
     // server waits for us to do something
   })
 );
