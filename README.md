@@ -174,9 +174,9 @@ Securly store the secret
 
 ### OAUTH FLOW:
   - A user signs up. They go through Oauth flow
-  - our server receives google info
+  - our server receives google info (we console log)
   - signs out
-  - we exchange code fro profile
+  - we exchange code for profile
   - we pick consistant piece of info form the profile. "Is this one piece of your profile identical to what you had earlier?"
   - Look at profile ...
     - we use the users id
@@ -185,6 +185,18 @@ Securly store the secret
       - we sign them in.
       - we take id compare to original and confirm
       - we are making assumption the id wont change
+  - We will use user ID to help login user
+
+### OAUTH FLOW 2.0:
+  - User comes to server with profile
+  - server will take profile, we create new record in DB (Mongo)
+  - Create new User record
+  - Come back to server, of existing user.
+  - Send cookie to user, cookie will identify user.
+  - Logout:
+    - unset the cookie
+    - If log back in check record exists.
+    - Set cookie etc.
 
 ### Full flow
 - User comes to our server with Google profile
