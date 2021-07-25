@@ -24,3 +24,9 @@ const PORT = process.env.PORT || 5000;
 // port
 // make sure to do ctrl-c
 app.listen(PORT);
+
+// mongoose.connect(keys.mongoURI, {
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useUnifiedTopology: true,
+// });
