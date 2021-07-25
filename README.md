@@ -207,3 +207,46 @@ Securly store the secret
 - signs in again, we check to see our users
 - we set cookie again, saying you are the user.
 - before we create any record for a user, we check to see if the user exists.
+
+### Intro MONGODB
+
+- Mongoose.js :
+  - to make our lives easier working with MONGODB
+  - Wraps up common operations for mongo.
+- How mongo stores info:
+  - stores in to collections
+    - collections have records
+    - records can have collections
+    - EXAMPLE:
+      - User collection:
+        - Each record is JSON.
+        - Key/Value
+        - A user might have keys like, id, name, height
+  - Schemaless
+    - Records in collections can have varying keys
+    - in contrast to Relational DBs
+- Mongoose in relation to MongoDB
+  - Mongoose has:
+    - Model Clase = Collection
+      - Model class has functions attached to it to work with a collection
+    - Model Instance (JS Object) = Record Of A Collection instances
+
+  #### setup a MongoDB account and Atlas cluster to use with the Emaily project
+  - Go to https://www.mongodb.com/cloud/atlas and click the "Start Free" button (or Sign In if you already have account)
+  - After creating your account, you will be prompted to create your first cluster. Leave all free tier options selected - AWS, North America: N. Virginia etc.
+  - Click create cluster
+  - click connect button, add your current IP addres
+  - create username and password
+  - After creating the user, you should get this success dialog box. Click the "Choose a connection method" button.
+  - Select "Connect Your Application"
+  - Copy the address under "Connection String Only"
+    - When you paste this string into your application, you will need to replace <username> and <password> with the actual info created earlier and swap out the <dbname> placeholder with any arbitrary name.
+    - Click the "Close" button and head back over to your Emaily application.
+    - In your config/keys.js file create the mongoURI key-value pair if you haven't already done so.
+    - Add the connection string by pasting the entire SRV address string you copied in the screen before.
+    - Remember to replace <username> with the user's actual username.
+    - Remember to replace <password> with the user's actual password.
+    - Remember to replace <dbname> with any name you'd like.
+    - example : mongoURI: 'mongodb+srv://p00gz:0JYnugifgjsP9UD6@emaily-uwsj6.mongodb.net/test?retryWrites=true'
+
+
